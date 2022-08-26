@@ -16,6 +16,6 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: generate build 
-        run: npm run bhild 
+        run: npm run build 
       - name: print hello
         run: echo "hello world ....!!!"
