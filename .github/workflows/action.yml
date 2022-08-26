@@ -1,0 +1,21 @@
+name: Github Action Examples
+
+on: [push]
+
+jobs:
+  build:
+    name: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone repository
+        uses: actions/checkout@v2
+      - name: use node  version node.js 17.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17.x
+      - name: install dependencies
+        run: npm install
+      - name: generate build 
+        run: npm run bhild 
+      - name: print hello
+        run: echo "hello world ....!!!"
